@@ -43,4 +43,10 @@ public class ToDoListResources {
         return ResponseEntity.noContent().build();
     }
 
+    @PutMapping(value = "/{id}")
+    public ResponseEntity<ToDoList> update(@PathVariable Long id, @RequestBody ToDoList obj){
+        obj = service.update(id,obj);
+        return ResponseEntity.ok().body(obj);
+    }
+
 }

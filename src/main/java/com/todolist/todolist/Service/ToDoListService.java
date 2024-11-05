@@ -31,4 +31,16 @@ public class ToDoListService {
         return toDoListRepository.findById(id)
                 .orElseThrow(() -> new ResourceNotFoundException("Tarefa não encontrada com ID: " + id));
     }
+
+    public void updateData(ToDoList entity, ToDoList obj){
+        entity.setTitle(obj.getTitle());
+        entity.setDescription(obj.getDescription());
+        entity.setPriority(obj.getPriority());
+    }
+
+    public ToDoList update(Long id, ToDoList obj){
+        ToDoList entity = toDoListRepository.getReferenceById(id);
+        updateData(entity, obj);
+        return toDoListRepository.save(entity);
+    }
 }
