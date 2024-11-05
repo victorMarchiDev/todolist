@@ -26,9 +26,9 @@ Esta é uma API RESTful de lista de tarefas (To-Do List) desenvolvida em Java co
 
 | Método | Endpoint           | Descrição                     |
 |--------|---------------------|-------------------------------|
-| POST   | `/api/create`       | ➕ Cria uma nova tarefa       |
-| GET    | `/api/tasks`       | 📋 Retorna todas as tarefas   |
-| GET    | `/api/tasks/{id}`  | 🔍 Retorna uma tarefa específica |
-| PUT    | `/api/todos/{id}`  | ✏️ Atualiza uma tarefa        |
-| DELETE | `/api/{id}`        | 🗑️ Exclui uma tarefa          |
+| POST   | `/todo/create`       | ➕ Cria uma nova tarefa       |
+| GET    | `/todo/tasks`       | 📋 Retorna todas as tarefas   |
+| GET    | `/todo/{id}`        | 🔍 Retorna uma tarefa específica |
+| PUT    | `/todo/todos/{id}`  | ✏️ Atualiza uma tarefa        |
+| DELETE | `/todo/{id}`        | 🗑️ Exclui uma tarefa          |
 
