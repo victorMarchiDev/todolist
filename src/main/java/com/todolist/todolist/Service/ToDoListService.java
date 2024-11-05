@@ -2,6 +2,7 @@ package com.todolist.todolist.Service;
 
 import com.todolist.todolist.Entities.ToDoList;
 import com.todolist.todolist.Repository.ToDoListRepository;
+import com.todolist.todolist.Service.exceptions.ResourceNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -26,4 +27,8 @@ public class ToDoListService {
         toDoListRepository.deleteById(id);
     }
 
+    public ToDoList findById(Long id) {
+        return toDoListRepository.findById(id)
+                .orElseThrow(() -> new ResourceNotFoundException("Tarefa não encontrada com ID: " + id));
+    }
 }

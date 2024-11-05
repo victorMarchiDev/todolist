@@ -11,6 +11,7 @@ import java.net.URI;
 import java.util.List;
 
 @RestController
+@RequestMapping(value = "/todo")
 public class ToDoListResources {
 
     @Autowired
@@ -28,6 +29,12 @@ public class ToDoListResources {
     public ResponseEntity<List<ToDoList>> findAll(){
         List<ToDoList> l = service.findAll();
         return ResponseEntity.ok().body(l);
+    }
+
+    @GetMapping(value = "/{id}")
+    public ResponseEntity<ToDoList> findById(@PathVariable Long id){
+        ToDoList obj = service.findById(id);
+        return ResponseEntity.ok().body(obj);
     }
 
     @DeleteMapping(value = "/{id}")
