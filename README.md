@@ -33,3 +33,7 @@ Esta é uma API RESTful de lista de tarefas (To-Do List) desenvolvida em Java co
 | PUT    | `/todo/{id}`        | ✏️ Atualiza uma tarefa        |
 | DELETE | `/todo/{id}`        | 🗑️ Exclui uma tarefa          |
 
+## Link da documentação da API no Postman
+
+https://www.postman.com/victorhugomarchi/todolist/collection/tiffobb/todolist-project
+
