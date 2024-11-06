@@ -7,6 +7,7 @@ Esta é uma API RESTful de lista de tarefas (To-Do List) desenvolvida em Java co
 - **Java 17**
 - **Spring Boot 3** (Spring Web, Spring Data JPA)
 - **Banco de Dados H2** (para ambiente de desenvolvimento/teste)
+- **PostgreSQL** (para persistência em ambiente de produção)
 - **Maven** (para gerenciamento de dependências)
   
 ## ✨ Funcionalidades
