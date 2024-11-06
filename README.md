@@ -22,7 +22,7 @@ Esta é uma API RESTful de lista de tarefas (To-Do List) desenvolvida em Java co
 
 - **Java 17** ou superior
 - **Maven 3.8** ou superior
-
+- **PostgreSQL** (versão 13 ou superior) instalado e configurado
 ## 📡 Endpoints da API
 
 | Método | Endpoint           | Descrição                     |
