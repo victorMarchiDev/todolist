@@ -7,6 +7,7 @@ Esta é uma API RESTful de lista de tarefas (To-Do List) desenvolvida em Java co
 - **Java 17**
 - **Spring Boot 3** (Spring Web, Spring Data JPA)
 - **Banco de Dados H2** (para ambiente de desenvolvimento/teste)
+- **PostgreSQL** (para persistência em ambiente de produção)
 - **Maven** (para gerenciamento de dependências)
   
 ## ✨ Funcionalidades
@@ -21,7 +22,7 @@ Esta é uma API RESTful de lista de tarefas (To-Do List) desenvolvida em Java co
 
 - **Java 17** ou superior
 - **Maven 3.8** ou superior
-
+- **PostgreSQL** (versão 13 ou superior) instalado e configurado
 ## 📡 Endpoints da API
 
 | Método | Endpoint           | Descrição                     |
@@ -31,4 +32,8 @@ Esta é uma API RESTful de lista de tarefas (To-Do List) desenvolvida em Java co
 | GET    | `/todo/{id}`        | 🔍 Retorna uma tarefa específica |
 | PUT    | `/todo/{id}`        | ✏️ Atualiza uma tarefa        |
 | DELETE | `/todo/{id}`        | 🗑️ Exclui uma tarefa          |
+
+## Link da documentação da API no Postman
+
+https://www.postman.com/victorhugomarchi/todolist/collection/tiffobb/todolist-project
 
